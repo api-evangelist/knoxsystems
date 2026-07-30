@@ -1,0 +1,24 @@
+generated: '2026-07-19'
+method: probed
+source: live HTTP probes of the knoxsystems.com host
+host: https://knoxsystems.com
+result: none
+description: >-
+  Knox Systems publishes no /.well-known/ discovery surface. Every RFC-standard
+  discovery document probed returned 404 (the site is a Webflow marketing site
+  with a catch-all HTML 404). No raw files were saved and no WellKnown or
+  SecurityTxt pointer is wired into apis.yml, because there is nothing published
+  to point at. This file records the negative result so a later re-run can
+  detect a change.
+documents:
+- {path: /.well-known/security.txt, status: 404}
+- {path: /.well-known/openid-configuration, status: 404}
+- {path: /.well-known/oauth-authorization-server, status: 404}
+- {path: /.well-known/api-catalog, status: 404}
+- {path: /.well-known/ai-plugin.json, status: 404}
+other_hosts_probed:
+- host: https://trust.knoxsystems.com
+  note: >-
+    Resolves via CloudFront/S3 to a client-rendered Nuxt single-page application
+    (an authenticated product surface with chat/agents/files routes), not a trust
+    center. /.well-known/security.txt returns 403 from S3.

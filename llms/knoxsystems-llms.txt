@@ -1,0 +1,58 @@
+# Knox Systems
+
+> Knox Systems is a federal cloud compliance and managed-security company that provides an accelerated path to FedRAMP authorization for SaaS and AI vendors selling into the U.S. government — marketed as "FedRAMP in 90 days for 90% less." Vendors deploy into a pre-authorized Knox FedRAMP boundary and inherit its controls instead of pursuing an independent ATO.
+
+Knox Systems publishes no public API, developer portal, SDKs, or API documentation as of 2026-07-19. This file describes the company surface that does exist, for agents and researchers working from the API Evangelist network catalog. Do not infer an API from this document.
+
+## Platform
+
+- [Platform](https://knoxsystems.com/platform): The Knox FedRAMP boundary, Landing Zone, hardened images, and Knox AI continuous-monitoring engine, running on AWS, Azure, and GCP at FedRAMP Moderate, FedRAMP High, and DISA IL4.
+- [Why Knox](https://knoxsystems.com/why-knox): Positioning against independent ATO paths and competing compliance accelerators.
+- [Enterprise](https://knoxsystems.com/enterprise): Offering for established software vendors.
+- [Startups](https://knoxsystems.com/startups): Offering for early-stage vendors entering the federal market.
+- [Landing Zone](https://knoxsystems.com/landing-zone): Deployable federal-workload infrastructure.
+- [Hardened Images](https://knoxsystems.com/hardened-images): Pre-configured, security-hardened machine images.
+- [Secure Configuration Guides](https://knoxsystems.com/secure-configuration-guides)
+
+## Commercial
+
+- [Pricing](https://knoxsystems.com/pricing): Cost-comparison calculator; approximately $500k per application versus a modeled ~$3.0M annual do-it-yourself cost. No self-serve sign-up or published tiers.
+- [ROI](https://knoxsystems.com/roi)
+- [Book a Meeting](https://knoxsystems.com/book-a-meeting): The only entry path — sales-led, no self-serve account creation.
+- [Customer Stories](https://knoxsystems.com/customer-stories) and [case studies](https://knoxsystems.com/case-studies/) covering Adobe, Armis, BigID, Celonis, Kovr AI, LeapXpert, OutSystems, Procurement Sciences, Resilinc, Sierra, Sift, Spacelift, and Tovuti.
+
+## Compliance posture
+
+- FedRAMP Moderate and FedRAMP High authorized boundary; DISA Impact Level 4. IL5 targeted for late 2026.
+- Aligned to NIST 800-53 control families; FISMA authorization path.
+- Reports 15+ ATOs across federal and DoD agencies including DHS, FEMA, the Marine Corps, Treasury, and the VA.
+- No SOC 2, ISO 27001, CMMC, StateRAMP, or FIPS 140-3 attestation published.
+- Detail: [conformance/knoxsystems-conformance.yml](conformance/knoxsystems-conformance.yml)
+
+## Security
+
+- Report a vulnerability: support@knoxsystems.com (subject "Vulnerability Report Submission"), linked from the site footer.
+- No /.well-known/security.txt, no published disclosure policy, no bug bounty program.
+- Detail: [security/knoxsystems-vulnerability-disclosure.yml](security/knoxsystems-vulnerability-disclosure.yml), [security/knoxsystems-domain-security.yml](security/knoxsystems-domain-security.yml)
+
+## Content
+
+- [Knox News](https://knoxsystems.com/knox-news): Company blog index. Roughly 100 posts under /blog/, covering FedRAMP 20x, customer authorizations, partnerships, and federal policy. No RSS or Atom feed is published.
+- [Resources](https://knoxsystems.com/resources): A large FedRAMP explainer library — ATO, 3PAO, POA&M, control families, continuous monitoring, FedRAMP vs. CMMC / SOC 2 / NIST / StateRAMP, DoD impact levels, and FIPS.
+- [Events](https://knoxsystems.com/events)
+- [About](https://knoxsystems.com/about)
+
+## Company
+
+- Website: https://knoxsystems.com
+- LinkedIn: https://www.linkedin.com/company/knox-systems-inc/
+- Careers: https://jobs.ashbyhq.com/knox-systems
+- Privacy Policy: https://knoxsystems.com/policies/privacy-policy
+- Investors: Felicis. Raised a $25M Series A to scale AI-managed federal cloud.
+- No terms-of-service page and no verified GitHub organization were found.
+
+## Notes for agents
+
+- There is no Knox Systems API, OpenAPI definition, SDK, CLI, MCP server, sandbox, or changelog to call or generate against.
+- Knox is available through the AWS, Azure, and Google Cloud marketplaces per company announcements; procurement is sales-led.
+- Catalog entry: https://raw.githubusercontent.com/api-evangelist/knoxsystems/refs/heads/main/apis.yml

@@ -1,0 +1,85 @@
+generated: '2026-07-19'
+method: searched
+source: >-
+  https://knoxsystems.com/platform, https://knoxsystems.com/why-knox and the
+  Knox Systems resource library (https://knoxsystems.com/resources).
+description: >-
+  Knox Systems' conformance posture is a federal-authorization posture, not an
+  API-protocol one. Knox operates an authorized FedRAMP boundary that customer
+  SaaS workloads inherit, so the standards asserted below are compliance
+  frameworks the company publicly claims to hold or operate against. Knox
+  publishes no public API, so the usual API-protocol standards (OAuth2, OIDC,
+  RFC 9457, JSON:API, pagination, idempotency) are recorded as not-applicable
+  rather than non-conforming.
+standards:
+- id: fedramp-high
+  conforms: true
+  evidence: >-
+    Knox operates its FedRAMP boundary at FedRAMP High; the company announced
+    "Knox FedRAMP High Listed" and delivers customer authorizations at High
+    (https://knoxsystems.com/platform).
+- id: fedramp-moderate
+  conforms: true
+  evidence: >-
+    Platform page states the boundary runs on AWS, Azure and GCP at "FedRAMP
+    Moderate, High, and DISA IL4".
+- id: disa-il4
+  conforms: true
+  evidence: DISA Impact Level 4 named on https://knoxsystems.com/platform.
+- id: disa-il5
+  conforms: false
+  evidence: Platform page states IL5 is targeted for late 2026 — not yet held.
+- id: nist-800-53
+  conforms: true
+  evidence: >-
+    Continuous-monitoring and scanning capabilities are described as aligned to
+    NIST 800-53 control families, the FedRAMP control baseline.
+- id: fisma
+  conforms: true
+  evidence: >-
+    FedRAMP authorization is the FISMA implementation path for cloud services;
+    Knox reports 15+ ATOs across federal and DoD agencies (DHS, FEMA, Marine
+    Corps, Treasury, VA).
+- id: cmmc
+  conforms: false
+  evidence: >-
+    Knox publishes explanatory CMMC comparison resources
+    (/resources/fedramp-vs-cmmc, /resources/cmmc-vs-nist-800-171) but claims no
+    CMMC certification of its own.
+- id: stateramp
+  conforms: false
+  evidence: >-
+    StateRAMP covered as a resource topic (/resources/stateramp) with no
+    StateRAMP authorization claimed for the Knox platform.
+- id: soc2
+  conforms: false
+  evidence: >-
+    No SOC 2 report or trust-center attestation published; SOC 2 appears only as
+    resource content (/resources/fedramp-vs-soc-2, /blog/soc-2-to-fedramp-...).
+- id: fips-140-3
+  conforms: false
+  evidence: >-
+    FIPS validated cryptography is covered as resource content
+    (/resources/fips-140-3-vs-140-2) with no FIPS validation claimed for Knox
+    itself.
+- id: iso-27001
+  conforms: false
+  evidence: No ISO 27001 certification published.
+not_applicable:
+- id: oauth2
+  reason: No public API or authorization surface published.
+- id: oidc
+  reason: No /.well-known/openid-configuration on knoxsystems.com (404).
+- id: rfc9457-problem-details
+  reason: No public API.
+- id: json-api
+  reason: No public API.
+- id: idempotency
+  reason: No public API.
+- id: pagination
+  reason: No public API.
+- id: scim
+  reason: No published provisioning surface.
+gaps:
+- No trust center or public attestation portal (trust.knoxsystems.com resolves to an unrelated application, not a trust page).
+- Authorization claims are marketing-page assertions; no linked FedRAMP Marketplace package ID was published on-site.
