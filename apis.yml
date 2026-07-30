@@ -1,19 +1,52 @@
 aid: knoxsystems
-name: Knoxsystems
-description: Knoxsystems is a company surfaced as a portfolio company of felicis and added to the API
-  Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+name: Knox Systems
+description: >-
+  Knox Systems is a federal cloud compliance and managed-security company that
+  provides an accelerated path to FedRAMP authorization for SaaS and AI vendors
+  selling into the U.S. government, marketed as "FedRAMP in 90 days for 90% less."
+  Its platform combines a pre-authorized FedRAMP boundary, a deployable Landing
+  Zone, hardened images, and Knox AI — a continuous-monitoring and automated
+  remediation engine trained on federal audit data — running across AWS, Azure,
+  and GCP at FedRAMP Moderate, FedRAMP High, and DISA Impact Level 4. Vendors
+  inherit Knox's authorization and controls rather than pursuing an independent
+  ATO, and Knox reports 15+ authorizations to operate across federal and DoD
+  agencies including DHS, FEMA, the Marine Corps, Treasury, and the VA. Knox
+  Systems is a private company backed by Felicis, and operates a partner-led
+  business rather than a public developer API program — as of this enrichment
+  pass it publishes no public API, developer portal, SDKs, or API documentation.
 url: https://raw.githubusercontent.com/api-evangelist/knoxsystems/refs/heads/main/apis.yml
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://cdn.prod.website-files.com/6795d8efb385360bc692d663/686aa5134fc3fa66790ecbdc_KNOX%20Logo%20KO.svg
 x-type: company
 x-source: vc-portfolio
 x-backed-by:
 - felicis
-x-tier: stub
-x-tier-reason: portfolio-lead
+x-tier: profiled
+x-tier-reason: enriched-no-public-api
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-19'
 tags:
 - Company
+- Compliance
+- Security
+- Government
+- FedRAMP
+- Cloud
+- Artificial Intelligence
+- Public Sector
+- Governance
+- Managed Services
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -23,3 +56,44 @@ maintainers:
 common:
 - type: Website
   url: https://knoxsystems.com
+- type: About
+  url: https://knoxsystems.com/about
+- type: Platform
+  url: https://knoxsystems.com/platform
+- type: Blog
+  url: https://knoxsystems.com/knox-news
+- type: Pricing
+  url: https://knoxsystems.com/pricing
+- type: PrivacyPolicy
+  url: https://knoxsystems.com/policies/privacy-policy
+- type: Security
+  name: Report a vulnerability to Knox Systems
+  url: mailto:support@knoxsystems.com?subject=Vulnerability%20Report%20Submission
+- type: VulnerabilityDisclosure
+  url: security/knoxsystems-vulnerability-disclosure.yml
+- type: DomainSecurity
+  url: security/knoxsystems-domain-security.yml
+- type: Conformance
+  url: conformance/knoxsystems-conformance.yml
+- type: Compliance
+  url: https://knoxsystems.com/platform
+- type: LLMsTxt
+  url: llms/knoxsystems-llms.txt
+- type: Resources
+  name: FedRAMP resource library
+  url: https://knoxsystems.com/resources
+- type: CaseStudies
+  url: https://knoxsystems.com/customer-stories
+- type: Events
+  url: https://knoxsystems.com/events
+- type: Careers
+  url: https://jobs.ashbyhq.com/knox-systems
+- type: LinkedIn
+  url: https://www.linkedin.com/company/knox-systems-inc/
+- type: ContactSales
+  url: https://knoxsystems.com/book-a-meeting
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
