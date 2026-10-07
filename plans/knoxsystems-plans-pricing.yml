@@ -1,0 +1,30 @@
+# Pricing transcribed from the provider's own page — see provenance. Numbers are quoted, not derived.
+generated: '2026-10-07'
+method: searched
+source: https://knoxsystems.com/pricing
+sources:
+- https://knoxsystems.com/pricing
+provenance:
+  tool: all/0-working/economics/harvest_pricing.py
+  run: 20261007T104522
+  grounding: every price_text was found verbatim in the fetched page text
+audience: business-product
+pricing_basis: flat-platform
+delivery:
+  delivery: managed
+  method: page
+  read: '2026-10-07'
+published: true
+note: Savings calculator page. Shows comparison cost estimates without Knox ($3.0M total, with line items
+  $350k 3PAO/CISO, $350k CCO, $300k dedicated staff, $1.0M documentation & tools, $750k ancillary fees,
+  $250k) versus 'with KNOX $500k' base rate of $500k/App. Billing period not stated.
+plan_count: 1
+currency: USD
+plans:
+- name: with KNOX — Base Rate
+  price_text: $500k/App
+  price: 500000
+  currency: USD
+  period: none
+  unit: App
+  included_quota: Includes all assessments, documentation, and continuous monitoring
