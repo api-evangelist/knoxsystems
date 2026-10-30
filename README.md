@@ -64,26 +64,90 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-Knox Systems is a federal cloud compliance and managed-security company that provides an accelerated path to FedRAMP authorization for SaaS and AI vendors selling into the U.S. government, marketed as "FedRAMP in 90 days for 90% less." Its platform combines a pre-authorized FedRAMP boundary, a deployable Landing Zone, hardened images, and Knox AI — a continuous-monitoring and automated remediation engine — running across AWS, Azure, and GCP at FedRAMP Moderate, FedRAMP High, and DISA Impact Level 4.
+Knox Systems is a federal cloud compliance and managed-security company that provides an accelerated path to FedRAMP authorization for SaaS and AI vendors selling into the U.S. government, marketed as "FedRAMP in 90 days for 90% less." Its platform combines a pre-authorized FedRAMP boundary, a deployable Landing Zone, hardened images, and Knox AI — a continuous-monitoring and automated remediation engine trained on federal audit data — running across AWS, Azure, and GCP at FedRAMP Moderate, FedRAMP High, and DISA Impact Level 4. Vendors inherit Knox's authorization and controls rather than pursuing an independent ATO, and Knox reports 15+ authorizations to operate across federal and DoD agencies including DHS, FEMA, the Marine Corps, Treasury, and the VA. Knox Systems is a private company backed by Felicis, and operates a partner-led business rather than a public developer API program — as of this enrichment pass it publishes no public API, developer portal, SDKs, or API documentation.
 
-Website: https://knoxsystems.com — Backed by: Felicis
+**Areas:** Company · Compliance · Security · Government · FedRAMP · Cloud · Artificial Intelligence · Public Sector · Governance · Managed Service
 
-## API surface
+## Knox Systems on APIs.io
 
-**Knox Systems publishes no public API.** As of the 2026-07-19 enrichment pass there is no developer portal, API documentation, OpenAPI definition, SDK, CLI, MCP server, sandbox, or changelog. `/docs`, `/developers`, `/api`, and `/llms.txt` all return 404, and no `/.well-known/` discovery documents are served. The business is sales-led and partner-led; `trust.knoxsystems.com` resolves to an authenticated product application rather than a trust center.
+Everything profiled for Knox Systems is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/knoxsystems/](https://apis.io/providers/knoxsystems/)** — or go straight to one of the APIs or properties below.
 
-Artifacts in this repo therefore cover company identity, compliance posture, and security posture only — no spec-derived artifacts were generated, because there is no spec to derive them from.
+### Published properties
 
-## Artifacts
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
 
-| Path | Type | Method |
-|---|---|---|
-| `conformance/knoxsystems-conformance.yml` | Conformance / Compliance | searched |
-| `security/knoxsystems-vulnerability-disclosure.yml` | VulnerabilityDisclosure | searched |
-| `security/knoxsystems-domain-security.yml` | DomainSecurity | probed |
-| `well-known/knoxsystems-well-known.yml` | (negative result — no pointer) | probed |
-| `llms/knoxsystems-llms.txt` | LLMsTxt | generated |
+#### Security (2)
 
-## Compliance posture
+Authentication, trust centre, and vulnerability disclosure.
 
-FedRAMP Moderate and High authorized boundary, DISA IL4 (IL5 targeted late 2026), aligned to NIST 800-53. Reports 15+ ATOs across federal and DoD agencies. No SOC 2, ISO 27001, CMMC, StateRAMP, or FIPS 140-3 attestation is published.
+- [Knoxsystems Domain Security](https://apis.io/security/knoxsystems/knoxsystems-domain-security/)
+- [Knoxsystems Vulnerability Disclosure](https://apis.io/security/knoxsystems/knoxsystems-vulnerability-disclosure/)
+
+#### Plans and pricing (1)
+
+Published plans, tiers and prices.
+
+- [Knoxsystems Plans Pricing](https://apis.io/plans/knoxsystems/knoxsystems-plans-pricing/)
+
+## Where to find this API
+
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
+
+- [Website](https://knoxsystems.com)
+- [Pricing](https://knoxsystems.com/pricing)
+- [Blog](https://knoxsystems.com/knox-news)
+- [Compliance](https://knoxsystems.com/platform)
+- [Privacy policy](https://knoxsystems.com/policies/privacy-policy)
+
+## API Evangelist rating
+
+**Kin Score 21.1** — emerging · rubric 0.24.0 · scored 2026-10-17
+
+| Facet | Score |
+|---|---|
+| Discoverability | 55.4 |
+| Contract quality | 0.0 |
+| Contract governance | 18.2 |
+| Operational transparency | 10.5 |
+| Developer ergonomics | 2.4 |
+| Access clarity | 50.0 |
+
+**Agent readiness 0.0** — human-only
+
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | — |
+| Agentic Access | — |
+| Reversibility Documented | — |
+| MCP Server | — |
+| Auth Clarity | — |
+| Idempotency | — |
+| Error Semantics | — |
+| OpenAPI Examples | — |
+| Rate Limit Signal | — |
+| Event Surface Described | — |
+| Agent Skills | — |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | — |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
+
+**Regulatory alignment 23.6** — Government & Public Sector
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/knoxsystems/](https://apis.io/providers/knoxsystems/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for Knox Systems: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/knoxsystems/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
